@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Saad Mekhfi</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    :root {
+      --primary: #6153cc;
+      --secondary: #3d348b;
+      --light-grey: #f5f5f5;
+      --dark-grey: #333333;
+      --text: #555555;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      color: var(--text);
+      background: #f4f6fb;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20px;
+      background: #ffffff;
+      color: var(--dark-grey);
+      box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+      border-radius: 12px;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--light-grey);
+      color: var(--dark-grey);
+    }
+    
+    .identity {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary);
+    }
+    
+    .name-title h1 {
+      color: var(--primary);
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .name-title h2 {
+      color: var(--secondary);
+      font-size: 18px;
+      font-weight: 500;
+    }
+    
+    .contact-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      font-size: 14px;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .contact-item i {
+      color: var(--primary);
+      font-size: 16px;
+    }
+    
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 30px;
+    }
+    
+    .section {
+      margin-bottom: 25px;
+    }
+    
+    .section-title {
+      color: var(--primary);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .timeline-item {
+      margin-bottom: 20px;
+    }
+    
+    .timeline-title {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--dark-grey);
+      margin-bottom: 5px;
+    }
+    
+    .timeline-period {
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+    
+    .timeline-description {
+      font-size: 14px;
+    }
+    
+    .skills-list {
+      list-style: none;
+    }
+    
+    .skill-category {
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    
+    .skill-item {
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    
+    .skill-item::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+    
+    .about-text {
+      font-size: 15px;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    
+    .experience-item {
+      margin-bottom: 25px;
+    }
+    
+    .experience-title {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--dark-grey);
+    }
+    
+    .experience-company {
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--secondary);
+    }
+    
+    .experience-date {
+      font-size: 14px;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    
+    .experience-description {
+      font-size: 14px;
+    }
+    
+    .experience-description ul {
+      padding-left: 20px;
+    }
+    
+    .experience-description li {
+      margin-bottom: 3px;
+    }
+    
+    @media print {
+      body {
+        margin: 0;
+        padding: 0;
+        background: white;
+      }
+      
+      .container {
+        width: 100%;
+        max-width: none;
+        padding: 15mm;
+        margin: 0;
+        box-shadow: none;
+      }
+      
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- En-tête avec photo et informations personnelles -->
+    <header class="header">
+      <div class="identity">
+        <img src="bella.jpg" alt="Saad Mekhfi" class="photo">
+        <div class="name-title">
+          <h1>Saad Mekhfi</h1>
+          <h2>Sous-Chef</h2>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i>📍</i>
+          <span>Casablanca, Maroc</span>
+        </div>
+        <div class="contact-item">
+          <i>📱</i>
+          <span>06 38 36 55 63</span>
+        </div>
+        <div class="contact-item">
+          <i>📧</i>
+          <span>saad_makhfi@hotmail.fr</span>
+        </div>
+        <div class="contact-item">
+          <i>🎂</i>
+          <span>02/10/1994</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <!-- Colonne de gauche -->
+      <div class="left-column">
+        <!-- À propos -->
+        <section class="section">
+          <h3 class="section-title">À propos</h3>
+          <div class="about-text">
+            Je suis un Chef de Cuisine professionnel ayant débuté ma carrière en 2014, avec plus de dix ans d'expérience pratique dans le domaine. Passionné par l'art culinaire, je me distingue par ma précision et ma créativité dans la préparation et la présentation des plats, alliant tradition et innovation. Je possède d'excellentes compétences en organisation du travail sous pression, en gestion efficace d'une brigade de cuisine, et en respect strict des normes de qualité et d'hygiène.
+Je maîtrise diverses techniques de cuisson, la planification et l'élaboration de menus variés, ainsi que la gestion des stocks et des commandes. J'assure également le contrôle des coûts de production tout en garantissant un excellent rapport qualité-prix. Mon objectif est d'offrir des expériences gastronomiques exceptionnelles qui dépassent les attentes des clients, tout en m'engageant dans un développement professionnel continu et en restant à l'écoute des nouvelles tendances culinaires.</div>
+        </section>
+
+        <!-- Formation -->
+        <section class="section">
+          <h3 class="section-title">Formation</h3>
+          
+          <div class="timeline-item">
+            <div class="timeline-title">Baccalauréat en Littérature</div>
+            <div class="timeline-period">2012</div>
+            <div class="timeline-description">Lycée Ittihad junior, Casablanca</div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-title">Diplôme Technicien Cuisine</div>
+            <div class="timeline-period">2016</div>
+            <div class="timeline-description">OFPPT - Institut de Technologie Appliquée Aïn Borja, Casablanca</div>
+          </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="section">
+          <h3 class="section-title">Compétences</h3>
+          <ul class="skills-list">
+            <li class="skill-item">Gestion des stocks et des coûts alimentaires</li>
+            <li class="skill-item">Normes d'hygiène et de sécurité alimentaire</li>
+            <li class="skill-item">Gestion d'équipe</li>
+            <li class="skill-item">Leadership et motivation</li>
+            <li class="skill-item">Résolution de problèmes</li>
+            <li class="skill-item">Planification et organisation du travail</li>
+          </ul>
+        </section>
+
+        <!-- Langues -->
+        <section class="section">
+          <h3 class="section-title">Langues</h3>
+          <ul class="skills-list">
+            <li class="skill-item">Français : Courant</li>
+            <li class="skill-item">Anglais : Niveau intermédiaire</li>
+          </ul>
+        </section>
+
+        <!-- Centres d'intérêts -->
+        <section class="section">
+          <h3 class="section-title">Centres d'intérêts</h3>
+          <ul class="skills-list">
+            <li class="skill-item">Sport</li>
+            <li class="skill-item">Lecture</li>
+            <li class="skill-item">Voyages</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Colonne de droite -->
+      <div class="right-column">
+        <!-- Expérience professionnelle -->
+        <section class="section">
+          <h3 class="section-title">Expérience professionnelle</h3>
+          <div class="experience-item">
+            <div class="experience-title">Chef de cuisine</div>
+            <div class="experience-company">LA CRIQUE NATURE & SPA, Dakhla</div>
+            <div class="experience-date">2024 – Présent</div>
+            <div class="experience-description">
+              En tant que Chef de Cuisine, je supervise la production culinaire destinée aux clients VIP, en garantissant l’excellence, la qualité et la constance des plats servis. Je planifie et gère les approvisionnements, optimise l'organisation des stocks, Création des plats signature , Dispatcher les tâches entre les chef de partie. Commis cuisine et coordonne efficacement le travail de l'ensemble de la brigade. Cette fonction me permet d'affiner mes compétences en management, en leadership, ainsi qu'en maîtrise de techniques culinaires diversifiées.
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <div class="experience-title">Sous-Chef</div>
+            <div class="experience-company">LA CRIQUE NATURE & SPA, Dakhla</div>
+            <div class="experience-date">2019 – 2024</div>
+            <div class="experience-description">
+              Je supervise la production culinaire pour les clients VIP, en assurant la qualité et la régularité des plats. Je gère l'approvisionnement et l'organisation des stocks, tout en coordonnant le travail de la brigade de cuisine. Cette expérience me permet de perfectionner mes compétences en gestion, en leadership et en techniques culinaires variées.
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <div class="experience-title">Demi-chef de Partie</div>
+            <div class="experience-company">RESTAURANT LA BAVAROISE, Casablanca</div>
+            <div class="experience-date">2018</div>
+            <div class="experience-description">
+              J'ai participé à la préparation de plats raffinés, en veillant à leur qualité et à leur présentation. Cette expérience m'a permis de développer mes techniques culinaires et de travailler efficacement en équipe.
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <div class="experience-title">Demi-chef de Partie</div>
+            <div class="experience-company">RESTAURANT OSTREA, Casablanca</div>
+            <div class="experience-date">2017</div>
+            <div class="experience-description">
+              Expérience significative en tant que Demi-Chef de Partie au Restaurant Ostrea, Casablanca. Maîtrise des techniques culinaires, gestion d'équipe, contrôle qualité et optimisation des opérations en cuisine. Fortes compétences en leadership et en résolution de problèmes.
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+    <!-- Bouton d'impression - visible uniquement à l'écran -->
+    <div class="no-print" style="text-align: center; margin-top: 30px;">
+      <button onclick="window.print()" style="padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: 500;">
+        Imprimer / Enregistrer en PDF
+      </button>
+    </div>
+  </div>
+</body>
+</html> 
