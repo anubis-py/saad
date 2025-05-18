@@ -578,6 +578,14 @@ main {
   line-height: 1.6;
 }
 
+.service-icon-box ion-icon {
+  color: var(--orange-yellow-crayola) !important;
+  font-size: 3rem !important;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  filter: drop-shadow(0 0 6px #bfa046);
+}
+
 
 /**
  * #testimonials 
