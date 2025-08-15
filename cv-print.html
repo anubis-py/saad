@@ -4,59 +4,312 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Saad Mekhfi</title>
+  <link rel="shortcut icon" href="bella.jpg" type="image/x-icon">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-    
-    :root {
-      --primary: #6153cc;
-      --secondary: #3d348b;
-      --light-grey: #f5f5f5;
-      --dark-grey: #333333;
-      --text: #555555;
+    /* Printing styles */
+    @media print {
+      body {
+        font-size: 12pt;
+        color: #000;
+        background-color: #fff;
+      }
+      .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .no-print {
+        display: none;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
     }
-    
+
+    /* General styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
     body {
-      color: var(--text);
-      background: #f4f6fb;
-      line-height: 1.5;
-      padding: 0;
-      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
     }
     
     .container {
-      max-width: 210mm;
-      margin: 0 auto;
-      padding: 20px;
-      background: #ffffff;
-      color: var(--dark-grey);
-      box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
-      border-radius: 12px;
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
     
     .header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       margin-bottom: 30px;
-      padding-bottom: 15px;
-      border-bottom: 1px solid var(--light-grey);
-      color: var(--dark-grey);
+      border-bottom: 2px solid #f0c419;
+      padding-bottom: 20px;
     }
     
-    .identity {
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 30px;
+      border: 5px solid #f0c419;
+    }
+    
+    .header-content h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    .header-content h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-item {
       display: flex;
       align-items: center;
-      gap: 20px;
     }
     
-    .photo {
+    .contact-item i {
+      margin-right: 10px;
+      color: #f0c419;
+    }
+    
+    .section-title {
+      font-size: 22px;
+      margin: 25px 0 15px;
+      color: #333;
+      border-left: 4px solid #f0c419;
+      padding-left: 10px;
+    }
+    
+    .experience-item, .education-item {
+      margin-bottom: 20px;
+    }
+    
+    .experience-item h3, .education-item h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    
+    .experience-item .meta, .education-item .meta {
+      color: #666;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+    
+    .experience-item p, .education-item p {
+      color: #555;
+    }
+    
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 15px;
+    }
+    
+    .skill-item {
+      margin-bottom: 15px;
+    }
+    
+    .skill-item h4 {
+      margin-bottom: 5px;
+    }
+    
+    .skill-bar {
+      height: 10px;
+      background: #e0e0e0;
+      border-radius: 5px;
+    }
+    
+    .skill-progress {
+      height: 100%;
+      background: #f0c419;
+      border-radius: 5px;
+    }
+    
+    .buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .print-btn {
+      background: #f0c419;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    
+    .print-btn:hover {
+      background: #e5b505;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <img src="bella.jpg" alt=" Saad Mekhfi " class="profile-img">
+      <div class="header-content">
+        <h1>Saad Mekhfi</h1>
+        <h2>Chef de cuisine</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i>📱</i>
+            <span>00 (212) 6 38 36 55 63</span>
+          </div>
+          <div class="contact-item">
+            <i>📧</i>
+            <span>saad_makhfi@hotmail.fr</span>
+          </div>
+          <div class="contact-item">
+            <i>🌐</i>
+            <span>saad.best</span>
+          </div>
+          <div class="contact-item">
+            <i>🎂</i>
+            <span>02 Oct 1994</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <h2 class="section-title">À propos</h2>
+    <p>
+      Je suis un Chef de Cuisine professionnel ayant débuté ma carrière en 2014, avec plus de dix ans d'expérience pratique dans le domaine. Passionné par l'art culinaire, je me distingue par ma précision et ma créativité dans la préparation et la présentation des plats, alliant tradition et innovation. Je possède d'excellentes compétences en organisation du travail sous pression, en gestion efficace d'une brigade de cuisine, et en respect strict des normes de qualité et d'hygiène.
+Je maîtrise diverses techniques de cuisson, la planification et l'élaboration de menus variés, ainsi que la gestion des stocks et des commandes. J'assure également le contrôle des coûts de production tout en garantissant un excellent rapport qualité-prix. Mon objectif est d'offrir des expériences gastronomiques exceptionnelles qui dépassent les attentes des clients, tout en m'engageant dans un développement professionnel continu et en restant à l'écoute des nouvelles tendances culinaires.
+    </p>
+   
+
+    <!-- Experience Section -->
+    <h2 class="section-title">Expérience professionnelle</h2>
+    
+    <div class="experience-item">
+      <h3>Chef de cuisine à LA CRIQUE NATURE & SPA, Dakhla </h3>
+      <div class="meta">2024 — Présent</div>
+      <p>
+         En tant que Chef de Cuisine, je supervise la production culinaire destinée aux clients VIP, en garantissant l’excellence, la qualité et la constance des plats servis. Je planifie et gère les approvisionnements, optimise l'organisation des stocks, Création des plats signature , Dispatcher les tâches entre les chef de partie. Commis cuisine et coordonne efficacement le travail de l'ensemble de la brigade. Cette fonction me permet d'affiner mes compétences en management, en leadership, ainsi qu'en maîtrise de techniques culinaires diversifiées.
+      </p>
+    </div>
+    <div class="experience-item">
+      <h3>Sous-Chef à LA CRIQUE NATURE & SPA, Dakhla </h3>
+      <div class="meta">2019 – 2024</div>
+      <p>
+        
+        Je supervise la production culinaire pour les clients VIP, en assurant la qualité et la régularité des plats. Je gère l'approvisionnement et l'organisation des stocks, tout en coordonnant le travail de la brigade de cuisine. Cette expérience me permet de perfectionner mes compétences en gestion, en leadership et en techniques culinaires variées.
+      </p>
+    </div>
+    
+    <div class="experience-item">
+      <h3>Demi-chef de Partie à RESTAURANT LA BAVAROISE, Casablanca </h3>
+      <div class="meta">2018 - 2019 </div>
+      <p>
+       J'ai participé à la préparation de plats raffinés, en veillant à leur qualité et à leur présentation. Cette expérience m'a permis de développer mes techniques culinaires et de travailler efficacement en équipe.
+      </p>
+    </div>
+    
+    <div class="experience-item">
+      <h3>Demi-chef de Partie à RESTAURANT OSTREA, Casablanca</h3>
+      <div class="meta">2017 - 2018</div>
+      <p>
+         Expérience significative en tant que Demi-Chef de Partie au Restaurant Ostrea, Casablanca. Maîtrise des techniques culinaires, gestion d'équipe, contrôle qualité et optimisation des opérations en cuisine. Fortes compétences en leadership et en résolution de problèmes.
+      </p>
+    </div>
+    
+   
+    <!-- Education Section -->
+    <h2 class="section-title">Formation</h2>
+    
+    <div class="education-item">
+      <h3>Baccalauréat en Littérature</h3>
+      <div class="meta">2012</div>
+      <p>
+        Lycée Ittihad junior, Casablanca
+      </p>
+    </div>
+    
+    <div class="education-item">
+      <h3>Diplôme Technicien Cuisine</h3>
+      <div class="meta">2016</div>
+      <p>
+        OFPPT - Institut de Technologie Appliquée Aïn Borja, Casablanca
+      </p>
+    </div>
+    
+   
+
+    <!-- Skills Section -->
+    <h2 class="section-title">Compétences</h2>
+    
+    <div class="skills">
+      <div class="skill-item">
+        <h4>Gestion des stocks et des coûts alimentaires</h4>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-item">
+        <h4>Normes d'hygiène et de sécurité alimentaire</h4>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-item">
+        <h4>Gestion d'équipe</h4>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 70%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-item">
+        <h4>Excel</h4>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Print Button (visible only on screen) -->
+    <div class="buttons no-print">
+      <button class="print-btn" onclick="window.print()">Imprimer CV</button>
+    </div>
+  </div>
+
+  <!-- Simple print script -->
+  <script>
+    // Add any additional functionality here if needed
+  </script>
+</body>
+</html> 
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -367,3 +620,4 @@ Je maîtrise diverses techniques de cuisson, la planification et l'élaboration 
 </body>
 
 </html> 
+
